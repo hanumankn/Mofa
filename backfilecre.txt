@@ -1,0 +1,99 @@
+import pickle
+import os
+import os.path
+from os import path
+
+cwd = os.chdir("C:\\Users\\kamal_n\\Desktop\\Mom target\\Ramsita")
+l = list(range(700,5500,5))
+
+def valmiki_fw(fn,lst):
+    with open("fn", "wb") as fp:   #Pickling
+            pickle.dump(l, fp)
+            
+            print ("File exists:"+str(path.exists('C:\\Users\\kamal_n\\Desktop\\Mom target\\Ramsita\\LT_Price.txt')))
+            fp.close()
+
+        
+def  valmiki_fr(fn):      
+     with open("fn", "rb") as fp:   # Unpickling
+             b = pickle.load(fp)
+             
+             fp.close() 
+     return(b)
+    
+    
+valmiki_fw("C:\\Users\\kamal_n\\Desktop\\Mom target\\Ramsita\\LT_Price.txt",l)
+ln=valmiki_fr("C:\\Users\\kamal_n\\Desktop\\Mom target\\Ramsita\\LT_Price.txt")
+print(ln)
+
+print ("File exists:"+str(path.exists('C:\\Users\\kamal_n\\Desktop\\Mom target\\Ramsita\\LT_Price.txt')))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
